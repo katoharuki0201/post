@@ -24,10 +24,8 @@ export function Sidebar() {
       <nav className="flex-1 flex flex-col gap-2">
         <Link
           to="/"
-          className={`flex items-center gap-4 px-4 py-3 rounded-full text-xl font-medium transition-colors w-fit ${
-            isActive('/')
-              ? 'font-bold'
-              : 'text-text hover:bg-surface-hover'
+          className={`flex items-center gap-4 px-4 py-3 rounded-full text-xl font-medium transition-colors w-fit text-text hover:bg-surface-hover ${
+            isActive('/') ? 'font-bold' : ''
           }`}
         >
           <Home size={26} />
@@ -57,10 +55,8 @@ export function Sidebar() {
         ) : (
           <Link
             to="/login"
-            className={`flex items-center gap-4 px-4 py-3 rounded-full text-xl font-medium transition-colors w-fit ${
-              isActive('/login')
-                ? 'font-bold'
-                : 'text-text hover:bg-surface-hover'
+            className={`flex items-center gap-4 px-4 py-3 rounded-full text-xl font-medium transition-colors w-fit text-text hover:bg-surface-hover ${
+              isActive('/login') ? 'font-bold' : ''
             }`}
           >
             <LogIn size={26} />
