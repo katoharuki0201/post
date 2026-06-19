@@ -1,8 +1,14 @@
 # アプリ起動手順
 
-## Laravel
+## バックエンド
 
-### 1. Composer パッケージのインストール
+バックエンドは `api` ディレクトリにあります。
+
+```bash
+cd api
+```
+
+### 1. パッケージのインストール
 
 ```bash
 composer install
@@ -42,4 +48,46 @@ php artisan serve
 
 ```
 http://localhost:8000
+```
+
+## フロントエンド
+
+フロントエンドは `web` ディレクトリにあります。
+
+```bash
+cd web
+```
+
+### 1. パッケージのインストール
+
+**npm を使う場合:**
+
+```bash
+npm install
+```
+
+**bun を使う場合:**
+
+```bash
+bun install
+```
+
+### 2. 開発サーバーの起動
+
+**npm を使う場合:**
+
+```bash
+npm run dev
+```
+
+**bun を使う場合:**
+
+```bash
+bun run dev
+```
+
+デフォルトでは以下で起動します。
+
+```
+http://localhost:5173
 ```
